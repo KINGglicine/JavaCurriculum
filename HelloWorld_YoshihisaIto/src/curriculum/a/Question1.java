@@ -5,15 +5,25 @@ public class Question1 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		
-		byte byteNum = 10 ;
-		short shortNum = 100;
-		int intNum = 1000;
-		long longNum = 10000;
-		float floatNum = 9.5f;
-		double doubleNum = 10.5;
-		char letter = 'a';
-		String letters = "ハロー";
-		boolean isBoolean = true;
+		byte byteNum = 0 ;
+		short shortNum = 0;
+		int intNum = 0;
+		long longNum = 0L;
+		float floatNum = 0.0f;
+		double doubleNum = 0.0;
+		char letter = '\u0000';
+		String letters = null;
+		boolean isBoolean = false;
+		
+		byteNum = 10 ;
+		shortNum = 100;
+		intNum = 1000;
+		longNum = 10000;
+		floatNum = 9.5f;
+		doubleNum = 10.5;
+		letter = 'a';
+		letters = "ハロー";
+		isBoolean = true;
 		
 		System.out.println(byteNum+shortNum+intNum+longNum);
 		System.out.println(byteNum*2);
@@ -46,7 +56,7 @@ public class Question1 {
 		
 		String numStr = "123";
 		int numInt = Integer.parseInt(numStr);
-		System.out.println(numInt+":"+numStr+10);
+		System.out.println(numStr+":"+numInt+10);
 		
 		int num = 50;
 		String numString = String.valueOf(num);
